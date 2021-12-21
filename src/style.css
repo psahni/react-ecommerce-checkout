@@ -1,0 +1,22 @@
+* {
+  margin: 10px;
+}
+
+h1, p {
+  font-family: Lato;
+}
+
+header {
+  border-bottom: 1px solid darkgrey;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.error {
+  color: red;
+}
