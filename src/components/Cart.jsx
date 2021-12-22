@@ -1,14 +1,19 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
-class Cart extends React.Component {
-  render() {
-    const quantity = this.props.cart_items.reduce((sum, ci) => sum + ci.quantity, 0);
+const Cart = ({ cart_items }) => {
+  const [quantity, setQuantity] = useState(0);
+
+  useEffect(() => {
+    console.log('useEffect()');
+    const q = cart_items.reduce((sum, ci) => sum + ci.quantity, 0);
+    setQuantity(q);
+  });
+
     return (
       <div>
         Basket { quantity }
       </div>
     )
-  }
 }
 
 export default Cart;

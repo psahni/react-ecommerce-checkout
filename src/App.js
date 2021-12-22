@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Product from './components/product/Product';
 import Checkout from './components/checkout/Checkout';
 import Failure from "./components/checkout/Failure";
+import Success from "./components/checkout/Success";
 import { ROUTES } from './config/constants/routes'
 
 import "./style.css";
